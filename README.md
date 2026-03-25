@@ -180,3 +180,68 @@ auto var7 {123ll}; // var7 is deduced to be of type long long
 | std::uppercase, std::nouppercase      | `<ios>`     | Show digits in uppercase                             |
 
 
+
+---
+#### int is the lowest type a compiler can to arthemetic operations
+
+```cpp
+short int var1 {10}; //2bytes
+short int var2 {20}; 
+cout<<sizeof(var1+var2);// 4 bytes
+```
+
+---
+
+#### `switch` staatment in c++
+
+```cpp
+#include <iostream>
+using namespace std;
+int main(){
+    int too{pen};
+    switch (tool){
+        case pen: {
+            std::cout << "Active tool is pen " << std::endl;
+        }
+        break;
+        case marker: {
+            cout << "Active tool is Marker" << endl;
+        }
+        break;
+        default:{
+            cout<< "Can't match any tool " << endl;
+        }
+    }
+}
+```
+
+---
+
+#### Ternary Operators
+
+```cpp
+result = (condition) ? option1 : option2 ;
+```
+
+> or simpy 
+
+```cpp
+if(condition){
+    resut = option1;
+}else{
+    result = option2;
+}
+```
+
+
+exmaple
+
+```cpp
+int max{};
+int a{35};
+int b{20};
+max = (a > b) ? a : b;
+cout<<"max : " << max <<endl;
+```
+
+---
